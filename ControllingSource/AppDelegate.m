@@ -56,7 +56,7 @@
         return _managedObjectContext;
     }
     
-    NSPersistentStoreCoordinator *coordinaator = [self persistentStoreCoordinator];
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
         [_managedObjectContext setPersistentStoreCoordinator:coordinator];
